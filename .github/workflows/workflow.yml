@@ -1,15 +1,30 @@
-name: Pull Request Action
-on: push
+name: "build-test"
+on: [push]
+
 jobs:
-  JobName1:
+  test_something:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v1
+      - uses: LouisBrunner/diff-action@v0.1.0
         with:
-          fetch-depth: 0
-      - name: Foo Bars
-        run: |
-          git fetch
-          git diff origin/main HEAD | grep slippage
-          node test.js
-        shell: bash
+          old: README.md
+          new: README.md
+          mode: addition
+          tolerance: better
+          output: out.txt
+#name: Pull Request Action
+#on: push
+#jobs:
+#  JobName1:
+#    runs-on: ubuntu-latest
+#    steps:
+#      - uses: actions/checkout@v2
+#        with:
+#          fetch-depth: 0
+#      - name: Foo Bars
+#        run: |
+#          git fetch
+#          git diff origin/main HEAD | grep slippage
+#          node test.js
+#        shell: bash

@@ -1,5 +1,6 @@
 const { exec } = require("child_process");
-
+let constants = ["test", "shoop"]
+let x = []
 exec("git diff origin/main HEAD", (error, stdout, stderr) => {
   if (error) {
     console.log(`error: ${error.message}`);
@@ -9,6 +10,6 @@ exec("git diff origin/main HEAD", (error, stdout, stderr) => {
     console.log(`stderr: ${stderr}`);
     return;
   }
-  console.log(`stdout: ${stdout}`);
+    x = "stdout"
 });
-console.log("poop");
+console.log(x)
