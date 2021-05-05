@@ -10,5 +10,5 @@ jobs:
       - name: Foo Bars
         run: |
           git fetch
-          git diff origin/main HEAD
+          git diff origin/main HEAD | grep slippage
         shell: bash
