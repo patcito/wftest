@@ -11,7 +11,7 @@ jobs:
           old: README.md
           new: README.md
           mode: addition
-          tolerance: better
+          tolerance: same
           output: out.txt
 #name: Pull Request Action
 #on: push
