@@ -6,13 +6,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
-      - uses: patcito/diff-action@v0.2.8
+      - uses: patcito/diff-action@v0.2.9
         with:
           old: README.md
           new: README.md
           mode: addition
+          notify_issue: true
           tolerance: same
-          output: out.txt
+          title: Important changes detected
 #name: Pull Request Action
 #on: push
 #jobs:
