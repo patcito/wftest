@@ -6,7 +6,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
-      - uses: patcito/check-keywords-in-diff@v0.2.31
+      - uses: patcito/check-keywords-in-diff@v0.2.32
         with:
           old: README.md
           new: README.md
