@@ -6,7 +6,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
-      - uses: LouisBrunner/diff-action@v0.1.0
+      - uses: patcito/diff-action@v0.1.0
         with:
           old: README.md
           new: README.md
