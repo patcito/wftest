@@ -1,0 +1,13 @@
+name: Pull Request Action
+on: push
+jobs:
+  JobName1:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+      - name: Foo Bars
+        run: |
+          git diff origin/master HEAD
+        shell: bash
