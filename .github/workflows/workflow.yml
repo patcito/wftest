@@ -10,5 +10,5 @@ jobs:
       - name: Foo Bars
         run: |
           git fetch
-	    run: git diff origin/main HEAD
+          git diff origin/main HEAD
         shell: bash
