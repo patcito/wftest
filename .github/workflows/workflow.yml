@@ -9,5 +9,5 @@ jobs:
           fetch-depth: 0
       - name: Foo Bars
         run: |
-          git diff origin/master HEAD
+          git diff origin/main HEAD
         shell: bash
