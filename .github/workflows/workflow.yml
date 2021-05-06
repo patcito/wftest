@@ -6,7 +6,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
-      - uses: patcito/check-keywords-in-diff@v0.2.62
+      - uses: patcito/check-keywords-in-diff@v0.2.63
         with:
           branch: main
           notify_issue: true
