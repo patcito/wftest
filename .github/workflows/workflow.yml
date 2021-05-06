@@ -12,7 +12,6 @@ jobs:
           new: README.md
           mode: addition
           notify_issue: true
-          keywords: ["YVBOOST_ETH_PJAR", "PICKLE_GAUGE_ADDRESS"]
           tolerance: same
           title: Important changes detected
           token: ${{ secrets.GITHUB_TOKEN }}
