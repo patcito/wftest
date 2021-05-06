@@ -1,4 +1,4 @@
-name: "build-test"
+name: "check-payment-code-in-diff"
 on: [push]
 
 jobs:
