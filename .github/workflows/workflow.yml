@@ -6,27 +6,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
-      - uses: patcito/check-keywords-in-diff@v0.2.56
+      - uses: patcito/check-keywords-in-diff@v0.2.57
         with:
-          old: README.md
-          new: README.md
-          mode: addition
           notify_issue: true
-          tolerance: same
           title: payment related code
           token: ${{ secrets.GITHUB_TOKEN }}
-#name: Pull Request Action
-#on: push
-#jobs:
-#  JobName1:
-#    runs-on: ubuntu-latest
-#    steps:
-#      - uses: actions/checkout@v2
-#        with:
-#          fetch-depth: 0
-#      - name: Foo Bars
-#        run: |
-#          git fetch
-#          git diff origin/main HEAD | grep slippage
-#          node test.js
-#        shell: bash
