@@ -6,12 +6,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
-      - uses: patcito/check-keywords-in-diff@v0.2.49
+      - uses: patcito/check-keywords-in-diff@v0.2.50
         with:
           old: README.md
           new: README.md
           mode: addition
           notify_issue: true
+          keywords: ["YVBOOST_ETH_PJAR", "PICKLE_GAUGE_ADDRESS"]
           tolerance: same
           title: Important changes detected
           token: ${{ secrets.GITHUB_TOKEN }}
