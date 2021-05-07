@@ -1,4 +1,4 @@
-name: "build-test"
+name: "check-payment-code-in-diff"
 on: [push]
 
 jobs:
@@ -6,8 +6,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
-      - uses: patcito/check-keywords-in-diff@v0.2.59
+      - uses: patcito/check-keywords-in-diff@v0.2.63
         with:
+          branch: main
           notify_issue: true
           title: payment related code
           token: ${{ secrets.GITHUB_TOKEN }}

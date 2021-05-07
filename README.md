@@ -28,4 +28,4 @@ yield call(web3.eth.sendTransaction, approvalTransaction);
 
 export const PICKLE_GAUGE_ADDRESS =
 
-SOME_CONSTANT
+ii SOME_CONSTANT
