@@ -31,3 +31,5 @@ export const PICKLE_GAUGE_ADDRESS =
 ii SOME_CONSTANT
 
 pullB pullB pullB
+
+ETH_ADDRESS
