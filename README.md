@@ -30,4 +30,4 @@ export const PICKLE_GAUGE_ADDRESS =
 
 ii SOME_CONSTANT
 
-pullA
+pullA pullA
