@@ -45,3 +45,8 @@ oooo
 RRRR
 
 kkk
+
+SOME_VAR
+
+jiji Some yvault 0xf2db9a7c0ACd427A680D640F02d90f6186E71725
+
